@@ -1,0 +1,18 @@
+# start Apache mod_rewrite
+RewriteEngine On
+
+ErrorDocument 404 /
+
+Options +FollowSymLinks -MultiViews  -Indexes
+
+# plugin condition
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-da
+RewriteCond %{REQUEST_URI} \.php$ [NC]
+RewriteRule ^(.+)(?=\.php) plugs.php?request=$1 [QSA,L]
+
+# default condition
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+?)/?$ $1.php
+
