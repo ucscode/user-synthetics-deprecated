@@ -63,21 +63,31 @@ The system is fully user oriented. Hence, it can be used to build technologies s
 
 ![Login form](https://i.imgur.com/dpmPenx.png)
 
-![Login form responsive](https://i.imgur.com/r4V8Iz4.png)
+***
 
 ![Admin cPanel](https://i.imgur.com/10ivo3t.png)
 
+***
+
 ![User profile](https://i.imgur.com/sqajIIU.png)
+
+***
 
 ![Site Settings](https://i.imgur.com/vqHk6vt.png)
 
+***
+
 ![Plugin Activation](https://i.imgur.com/LVKzXBC.png)
+
+***
 
 ![User List and notifications](https://i.imgur.com/1oN9wIk.png)
 
-![Mobile menu responsive](https://i.imgur.com/8SyqHOo.png)
+***
 
+![Mobile menu responsive](https://i.imgur.com/8SyqHOo.png)
 ![Add new user responsive](https://i.imgur.com/Dd45ZBd.png)
+![Login form responsive](https://i.imgur.com/r4V8Iz4.png)
 
 ## AUTHOR
 
