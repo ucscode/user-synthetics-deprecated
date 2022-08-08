@@ -83,10 +83,16 @@ The system is fully user oriented. Hence, it can be used to build technologies s
 
 ![User List and notifications](https://i.imgur.com/1oN9wIk.png)
 
-***
+##### Mobile Responsive
 
 ![Mobile menu responsive](https://i.imgur.com/8SyqHOo.png)
+
+***
+
 ![Add new user responsive](https://i.imgur.com/Dd45ZBd.png)
+
+***
+
 ![Login form responsive](https://i.imgur.com/r4V8Iz4.png)
 
 ## AUTHOR
