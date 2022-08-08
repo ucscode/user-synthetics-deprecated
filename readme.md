@@ -2,6 +2,8 @@
 
 ### The last user management system you'll ever need
 
+### REQUIRES PHP 7.4+
+
 User synthetics (USS) is a free and open source user management software solution developed in PHP and MYSQL. It is a light-weight 100% object oriented system designed to help web developers simplify the process of creating basic required user management features such as login, registration, reset password, user dashboard and admin panels.
 
 User synthetics gives you the absolute advantage to focus precisely on the significant part of your project without worrying or wasting time on user experience or user interface development. The system is so powerful that it gives you total tendency to recreate or modify any part of the interface or access controls by simply creating or installing extensions or plugins.
