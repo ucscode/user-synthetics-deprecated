@@ -25,7 +25,7 @@ The system is fully user oriented. Hence, it can be used to build technologies s
 -	Fully responsive
 -	Bootstrap & Font awesome
 -	JQuery & Vue
--	Compactible with PHP 5+
+-	Compactible with PHP 7.0 (although, 7.4 and above is recommended)
 -	Anti-Spam blocker without recaptcha
 -	Password Encryption
 -	Easily extendible
