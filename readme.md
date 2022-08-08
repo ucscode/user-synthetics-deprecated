@@ -29,7 +29,7 @@ The system is fully user oriented. Hence, it can be used to build technologies s
 -	Anti-Spam blocker without recaptcha
 -	Password Encryption
 -	Easily extendible
--	Light weight
+-	Simple Technology
 -	Fully optimized
 -	User authentication
 
