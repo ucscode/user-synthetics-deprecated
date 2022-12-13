@@ -64,36 +64,50 @@ abstract class paginate {
 		
 	}
 	
-	public function iterate( callable $func = null ) {
-		
-		if( !$this->ready() ) return false;
+	public function iterate( callable $func ) {
 		
 		$iterated_data_results = array();
-		
-		if( !empty($this->page_indexes) ):
-		
-			# -- [ get the starting point of mysql result ] --
-			$index_start = $this->page_indexes[ $this->current_page - 1 ];
 			
-			# -- [ get the ending point of mysqli result ] --
-			$index_end = $this->page_indexes[ $this->current_page ] ?? $this->max_rows;
+		if( !empty( $this->mysqli_result ) ) {
 			
-			# -- [ loop through the two points ] --
+			if( !$this->ready() ) return false;
 			
-			for( $x = $index_start; $x < $index_end; $x++ ) {
-				# -- [ fetch the data of the result ] --
-				$result = $this->mysqli_result->data_seek( $x );
-				# -- [ pass it as an argument ] --
-				if( $result ) $iterated_data_results[] = $func( $this->mysqli_result->fetch_assoc() );
-			};
+			if( !empty($this->page_indexes) ):
 			
-			# -- [ reset the mysqli result key ] --
-			$this->mysqli_result->data_seek(0);
+				# -- [ get the starting point of mysql result ] --
+				$index_start = $this->page_indexes[ $this->current_page - 1 ];
+				
+				# -- [ get the ending point of mysqli result ] --
+				$index_end = $this->page_indexes[ $this->current_page ] ?? $this->max_rows;
+				
+				# -- [ loop through the two points ] --
+				
+				for( $x = $index_start; $x < $index_end; $x++ ) {
+					# -- [ fetch the data of the result ] --
+					$result = $this->mysqli_result->data_seek( $x );
+					# -- [ pass it as an argument ] --
+					if( $result ) $iterated_data_results[] = $func( $this->mysqli_result->fetch_assoc() );
+				};
+				
+				# -- [ reset the mysqli result key ] --
+				$this->mysqli_result->data_seek(0);
+				
+			endif;
 			
-		endif;
+		} else {
+			
+			$this->current_page = (int)$this->current_page;
+			$this->max_rows = count($this->array_data);
+			$this->max_pages = (int)ceil( $this->max_rows / $this->rows_per_page );
+			$start = ($this->current_page - 1) * $this->rows_per_page;
+			//$end = ($this->current_page * $this->rows_per_page) - 1;
+			$rows = array_slice( $this->array_data, $start, $this->rows_per_page, true );
+			foreach( $rows as $array ) $iterated_data_results[] = $func( $array );
+			
+		}
 		
 		return $iterated_data_results;
-		
+			
 	}
 	
 }
