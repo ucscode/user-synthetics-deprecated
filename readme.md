@@ -1,6 +1,8 @@
 # USER SYNTHETICS
 
-### The last user management system you'll ever need
+## Please do not download this user synthetics. It's Outdated
+
+For the latest user synthetics project, visit the repository at [https://github.com/ucscode/user-synthetics](https://github.com/ucscode/user-synthetics)
 
 ### REQUIRES PHP 7.4+
 
