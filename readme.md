@@ -3,8 +3,9 @@
 # Please: Do not download this user synthetics. It's Outdated
 
 It works fine but it will frustrate you. It also does not follow similar or easier programming model as the new user synthetics.
+Also, it is no longer considered and does not receive any update. 
 
-Also, it is no longer considered and does not receive any update. To download the latest version of user synthetics, visit the repository at [https://github.com/ucscode/user-synthetics](https://github.com/ucscode/user-synthetics)
+To download the latest version of user synthetics, visit the repository at [https://github.com/ucscode/user-synthetics](https://github.com/ucscode/user-synthetics)
 
 ### REQUIRES PHP 7.4+
 
