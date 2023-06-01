@@ -1,6 +1,6 @@
 # USER SYNTHETICS (Deprecated)
 
-## Please: Do not download this user synthetics. It's Outdated
+# Please: Do not download this user synthetics. It's Outdated
 
 It works fine but it will frustrate you. It also does not follow similar or easier programming model as the new user synthetics.
 To download the latest version of user synthetics, visit the repository at [https://github.com/ucscode/user-synthetics](https://github.com/ucscode/user-synthetics)
