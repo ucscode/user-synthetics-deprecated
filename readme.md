@@ -1,11 +1,13 @@
 # USER SYNTHETICS (Deprecated)
 
-# Please: Do not download this user synthetics. It's Outdated
+# Please: Do not download this User Synthetics. It's Outdated
 
-It works fine but it will frustrate you. It also does not follow similar or easier programming model as the new user synthetics.
-Also, it is no longer considered and does not receive any update. 
+It works fine but it will frustrate you. It does not follow similar programming model as the new User Synthetics.
+Also, it is no longer considered and does not receive update anymore. 
 
 To download the latest version of user synthetics, visit the repository at [https://github.com/ucscode/user-synthetics](https://github.com/ucscode/user-synthetics)
+
+---
 
 ### REQUIRES PHP 7.4+
 
