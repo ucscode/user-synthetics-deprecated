@@ -3,6 +3,7 @@
 # Please: Do not download this User Synthetics. It's Outdated
 
 It does not follow similar programming model as the new User Synthetics. Thus, it is no longer considered and does not receive update anymore. 
+
 To download the latest version of user synthetics, visit the repository at [https://github.com/ucscode/user-synthetics](https://github.com/ucscode/user-synthetics)
 
 ---
